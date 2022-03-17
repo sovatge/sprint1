@@ -76,6 +76,7 @@ A continuació tens una mostra de com quedaria la maquetació final de la pàgin
 ![maqueta-final-nivell2](https://user-images.githubusercontent.com/11183610/158809454-a1e0beee-cdc1-45bf-947d-38d8fd7dcfc9.png)
 
 
+
 # NIVELL 3
 
 ## EXERCICI 6
@@ -95,3 +96,4 @@ Si vols pots consultar el material opcional de grid layout que hi ha al campus.
 # RECURSOS
 
 El material te adjuntat els elements gràfics mínims, però hauràs de buscar imatges per a complementar-ho. Pots utilitzar recursos gratuïts com <a href="https://pixabay.com/es/" target="_blank">pixabay.com</a>.
+
