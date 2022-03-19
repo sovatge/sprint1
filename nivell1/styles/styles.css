@@ -1,0 +1,45 @@
+body{
+  max-width: 1200px;
+}
+header{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+div.logo{
+  background-color:lightsalmon;
+
+}
+div.banner{
+  background-color:lightsalmon;
+  flex-grow: 0.6;
+}
+div.search{
+  background-color: lightsalmon;
+}
+nav{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+ul{
+  background-color:peachpuff;
+}
+main{
+  background-color: black;
+  display: inline-flex;
+}
+section{
+  background-color: lightblue;
+  display: flex;
+}
+article{
+  background-color: lightsteelblue;
+}
+aside{
+  background-color: lightpink;
+}
+footer{
+  background-color: black;
+}
+
