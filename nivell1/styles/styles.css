@@ -2,77 +2,166 @@
 Layout 
 ======== */
 
-* { /*  on an element, padding and border are included in the width and height  */
-  box-sizing: border-box;
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+
+@media (min-width: 1025px) {
+
+  * { /*  on an element, padding and border are included in the width and height  */
+    box-sizing: border-box;
+  }
+  body{
+    max-width: 1200px;
+  }
+  header{
+    background-color: #000000;
+    padding: 15px;
+  }
+  .upHeader{
+    display: flex;
+  }
+  .logo,.search,.banner{
+    background-color:#ff8250;
+    border: 15px #2b374d solid;
+    flex-grow: 0.15;
+    height: 45px;
+  }
+  .banner{
+    flex-grow: 0.85;
+    border-width: 15px 0;
+  }
+  .navBar{
+    background-color:#ffcd43;
+    border: 15px #fd7a0f solid;
+    margin-top: 10px;
+    height: 45px;
+  }
+  main{
+    background-color: #000000;
+    margin: 15px 0;
+    display: flex;
+  }
+  .news{
+    flex-grow: 3;
+    margin: 15px;
+    background-color: #2c384e;
+  }
+  .posts{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 15px;
+  }
+  section{
+    background-color: #1773c9;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 15px;
+  }
+  article{
+    background-color: #89addd;
+    margin: 15px;
+    height: 15px;
+  }
+  aside{
+    flex-grow: 1;
+    margin: 15px 0px;
+    margin-right: 15px;
+    border: #f84518 solid;
+    border-width: 1px 15px;
+    background-color: #f84518;
+    align-items: flex-start;
+  }
+  aside > p{
+    background-color: #fbfd87;
+    height: 15px;
+  }
+  footer{
+    border: black 15px solid;
+    background-color: #ffcd43;
+    height: 45px;
+  }
+
 }
-body{
-  max-width: 1200px;
-}
-header{
-  background-color: #000000;
-  padding: 15px;
-}
-.upHeader{
-  display: flex;
-}
-.logo,.search,.banner{
-  background-color:#ff8250;
-  border: 15px #2b374d solid;
-  flex-grow: 0.15;
-  height: 45px;
-}
-.banner{
-  flex-grow: 0.85;
-  border-width: 15px 0;
-}
-.navBar{
-  background-color:#ffcd43;
-  border: 15px #fd7a0f solid;
-  margin-top: 10px;
-  height: 45px;
-}
-main{
-  background-color: #000000;
-  margin: 15px 0;
-  display: flex;
-}
-.news{
-  flex-grow: 0.75;
-  margin: 15px;
-  background-color: #2c384e;
-}
-.posts{
-  display: flex;
-  justify-content: space-around;
-  margin-right: 15px;
-}
-section{
-  background-color: #1773c9;
-  width: 100%;
-  margin-top: 15px;
-  margin-left: 15px;
-  height: 15px;
-}
-article{
-  background-color: #89addd;
-  margin: 15px;
-  height: 15px;
-}
-aside{
-  flex-grow: 0.25;
-  margin: 15px 0px;
-  margin-right: 15px;
-  border: #f84518 solid;
-  border-width: 1px 15px;
-  background-color: #f84518;
-  align-items: flex-start;
-}
-aside > p{
-  background-color: #fbfd87;
-  height: 15px;
-}
-footer{
-  border: black 15px solid;
-  background-color: #ffcd43;
-  height: 45px;
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  * { /*  on an element, padding and border are included in the width and height  */
+    box-sizing: border-box;
+  }
+  body{
+    max-width: 1200px;
+  }
+  header{
+    background-color: #000000;
+    padding: 15px;
+  }
+  .upHeader{
+    display: flex;
+  }
+  .logo,.search,.banner{
+    background-color:#ff8250;
+    border: 15px #2b374d solid;
+    flex-grow: 0.15;
+    height: 45px;
+  }
+  .banner{
+    flex-grow: 0.85;
+    border-width: 15px 0;
+  }
+  .navBar{
+    background-color:#ffcd43;
+    border: 15px #fd7a0f solid;
+    margin-top: 10px;
+    height: 45px;
+  }
+  main{
+    background-color: #6fa200;
+    margin: 15px 0;
+    border: 15px #6fa200 solid;
+  }
+  .news{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    background-color: #2c384e;
+  }
+  .posts{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 15px;
+  }
+  section{
+    background-color: #1773c9;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 15px;
+  }
+  article{
+    background-color: #89addd;
+    margin: 15px;
+    height: 15px;
+  }
+  aside{
+    border: #f84518 solid;
+    border-width: 5px 15px;
+    background-color: #f84518;
+    align-items: flex-start;
+  }
+  aside > p{
+    background-color: #fbfd87;
+    height: 15px;
+  }
+  footer{
+    border: black 15px solid;
+    background-color: #ffcd43;
+    height: 45px;
+  }
 }
