@@ -1,0 +1,238 @@
+/* ========
+Layout 
+======== ******************************************************************** */
+
+/* eliminates a lot of the issues that come from collapsing margins on their own
+ */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ul,
+ol {
+margin: 0 0 1em 0;   
+}
+* { /*  on an element, padding and border are included in the width and height  */
+  box-sizing: border-box;
+}
+
+/* *****************************************************************************
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+TO DEFAULT */
+
+@media (max-width: 1280px) and (min-width: 1025px) {
+  
+  .content{
+    max-width: 90%;
+    margin: 0 5%;
+  }
+  .container{
+    background-image: url('../images/header.jpg');
+    background-position: center;
+    z-index: 0;
+    position: relative;
+    height: 25em;
+    padding-top: 3em;
+  }
+  header{
+    display: flex;
+    margin: 0 3em;
+  }
+  .logo{
+    align-items: center;
+    flex-grow: 0.4;
+  }
+  .navBar{
+    flex-grow: 6;
+    margin: 0 1em;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+  }
+  .itemMenu a{
+    color:#5a5a5a;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  .itemMenu a:hover{
+    color: #ff7b69;
+  }
+  .fa-solid{
+    padding-right: 0.6em;
+  }
+  .social{
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 0.5;
+    display: flex;
+  }
+  .socialIcon a{
+    color:#5a5a5a;
+    text-decoration: none;
+    justify-content: space-around;
+  }
+  .socialIcon a:hover{
+    color: #ff7b69;
+  }
+  .mottoBack{
+    position: absolute;
+    background-color: #e2e2e2;
+    opacity: 0.6;
+    width: 80%;
+    bottom: 0;
+    left: 10%;
+    height: 8em;
+  }
+  .motto{
+    color:#df5d2e;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1em;
+    font-family: 'Sorts Mill Goudy', serif;
+  }
+  main{
+    display:flex;
+    margin-top: 0.6em;
+  }
+  .news{
+    width: 75%;
+    background-color: #cecece;
+    flex-grow: 3;
+    margin-right: 0.6em;
+    padding: 0.6em;
+  }
+  .columns{
+    column-count: 2;
+  }
+  article{
+    background-color: #ffffff;
+    padding: 0.6em;
+    margin-bottom: 0.6em;
+  }
+  .marcImatge{
+    position: relative;
+  }
+  .imatge{
+    width:100%;
+    height: 15em;
+    object-fit: cover;
+  }
+  .date{
+    position: absolute;
+    bottom: -0.7em;
+    left: 0.5em;
+    color:#ffeed9;
+    text-shadow: 0.04em 0.04em #5a5a5a;
+    font-weight: 300;
+    font-size: 1.1em;
+    padding: 0.5em 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  h2{
+    background-color:#ff7b69;
+    padding: 0.5em 0 0 0.2em;
+    color:#ffffff;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+  }
+  .description{
+    margin: 0 0.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  .readMore{
+    margin: 1.5em 0.5em;
+    font-family: 'Roboto', sans-serif;
+  }
+  .readMore a{
+    color:#5a5a5a;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .readMore a:hover{
+    color: #ff7b69;
+  }
+  #quote{
+    text-align:center;
+    color:#5a5a5a;
+    font-size: 1.2em;
+    padding: 1em 1em 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  aside{
+    background-color: #cecece;
+    width: 20%;
+    text-align: center;
+    padding: 3em 1em 0;
+  }
+  h3{
+    font-family: 'Roboto', sans-serif;
+  }
+  aside > p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+    footer{
+    background-color: #cecece;
+    margin: 0.6em 0;
+  }
+  .copyright{
+    color:#5a5a5a;
+    background-color: #e9e9e9;
+    margin: 0 0.7em;
+    padding: 0.5em 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+/* *****************************************************************************
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+}
+
+/* *****************************************************************************
+/*   ##Device = Tablets, Ipads
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+  /* CSS */
+  
+}
+
+/* *****************************************************************************
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (max-width: 767px) and (min-width: 481px) {
+  
+  /* CSS */
+
+}
+
+/* *****************************************************************************
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 480px) and (min-width: 320px) {
+  
+  /* CSS */
+
+}
