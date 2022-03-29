@@ -24,10 +24,10 @@ margin: 0 0 1em 0;
 
 /* *****************************************************************************
   ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
+  ##Screen = B/w 1155px to 1280px
 TO DEFAULT */
 
-/* @media (max-width: 1280px) and (min-width: 1025px) { */
+/* @media (max-width: 1280px) and (min-width: 1155px) { */
   
   .content{
     max-width: 90%;
@@ -36,39 +36,25 @@ TO DEFAULT */
   .container{
     background-image: url('../images/header.jpg');
     background-position: center;
-    z-index: 0;
     position: relative;
     height: 25em;
     padding-top: 3em;
+    margin: 0 3em;
+    display: flex;
   }
   .logo{
     width: 100px;
     align-items: center;
     flex: 0 0 100px;
+    margin-left: 2em;
   }
   header{
     display: flex;
-    margin: 0 3em;
-  }
-
-  /* MENÚ RESPONSIVE */
-  
-  .respmenu a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    padding: 10px 20px;
-    border-bottom: 2px solid #456789;
-    max-width: 200px;
-    background: #234567;
-    font-variant: small-caps;
-    text-shadow: 1px 1px black;
   }
   .navBar{
-    flex: 0.7 0 35em;
-    margin: 0 1em 0 10em;
+    flex: 0.7 0.2 40em;
+    margin: 2.5em 1em 0 2em;
     justify-content: space-around;
-    align-items: center;
     display: flex;
     list-style: none;
   }
@@ -82,19 +68,18 @@ TO DEFAULT */
     color: #ff7b69;
   }
   .fa-solid{
-    padding-right: 0.6em;
+    margin-right: 0.6em;
   }
   .social{
     justify-content: space-around;
-    align-items: center;
-    flex: 0 1 5em;
+    flex: 0 0.1 5em;
     display: flex;
-    margin-left: 2em;
+    margin: 2.5em 0 0 1em;
   }
   .socialIcon a{
     color:#5a5a5a;
     text-decoration: none;
-    justify-content: space-around;
+    margin: 0 1.5em;
   }
   .socialIcon a:hover{
     color: #ff7b69;
@@ -117,7 +102,7 @@ TO DEFAULT */
   }
   main{
     display:flex;
-    margin-top: 0.6em;
+    margin: 0.6em 3em 0;
   }
   .news{
     width: 75%;
@@ -201,7 +186,7 @@ TO DEFAULT */
   }
     footer{
     background-color: #cecece;
-    margin: 0.6em 0;
+    margin: 0.6em 3em;
   }
   .copyright{
     color:#5a5a5a;
@@ -220,6 +205,21 @@ TO DEFAULT */
 
 @media (min-width: 1281px) {
   
+  .navBar{
+    flex: 0.7 2 40em;
+    margin: 2.5em 0em 0 3em;
+    justify-content: space-around;
+  }
+  .itemMenu a{
+    margin-right: 4em;
+  }
+  .social{
+    flex: 0.1 0.4 5em;
+    margin: 2.5em 0em 0 1em;
+  }
+  .socialIcon{
+    margin-right: 0.6em;
+  }
   main{
     display: block;
   }
@@ -258,8 +258,30 @@ TO DEFAULT */
   ##Screen = B/w 768px to 1024px
 */
 
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1154px) and (min-width: 768px) {
 
+  .logo{
+    width: 90px;
+    flex: 0 0 90px;
+  }
+  .header{
+    position: relative;
+  }
+  .navBar{
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    right: 2em;
+  }
+  .social{
+    position: absolute;
+    right: 10em;
+    margin: 0;
+  }
+  .socialIcon a{
+    display: inline-block;
+    margin: 0 0.6em;
+  }
   main{
     display: block;
   }
@@ -291,8 +313,65 @@ TO DEFAULT */
 
 @media (max-width: 767px) and (min-width: 481px) {
   
-  /* CSS */
-
+  .content{
+    max-width: 100%;
+    margin: 0;
+  }
+  .container{
+    height: 28em;
+  }
+  .logo{
+    width: 80px;
+    flex: 0 0 80px;
+  }
+  .header{
+    position: relative;
+  }
+  .navBar{
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    right: 1em;
+    padding-top: 2em;
+  }
+  .social{
+    position: absolute;
+    right: 0em;
+    margin: 0;
+  }
+  .socialIcon a{
+    display: inline-block;
+    margin: 0 0.6em;
+  }
+  .motto{
+    font-size: 1.5em;
+    padding-top: 1.5em;
+  }
+  .columns{
+    column-count: 1;
+  }
+  main{
+    display: block;
+  }
+  article > .columns{
+    column-count: 1;
+  }
+  .news{
+    width: 100%;
+    display: block;
+    margin-bottom: 0.6em;
+  }
+  aside{
+    width: 100%;
+    padding: 2em;
+  }
+  aside > h3{
+    font-size: 1.4em;
+    font-variant: small-caps;
+  }
+  aside > p{
+    font-weight: 600;
+  }
 }
 
 /* *****************************************************************************
@@ -302,6 +381,63 @@ TO DEFAULT */
 
 @media (max-width: 480px) and (min-width: 320px) {
   
-  /* CSS */
-
+  .content{
+    max-width: 100%;
+    margin: 0;
+  }
+  .logo{
+    width: 60px;
+    flex: 0 0 60px;
+  }
+  .header{
+    position: relative;
+  }
+  .navBar{
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    right: 1em;
+    padding-top: 2em;
+  }
+  .itemMenu{
+    font-size: small;
+  }
+  .social{
+    position: absolute;
+    right: 0em;
+    margin: 0;
+  }
+  .socialIcon a{
+    display: inline-block;
+    margin: 0 0.6em;
+  }
+  .motto{
+    font-size: 1.3em;
+    padding-top: 1.3em;
+  }
+  .columns{
+    column-count: 1;
+  }
+  main{
+    display: block;
+  }
+  article > .columns{
+    column-count: 1;
+  }
+  .news{
+    width: 100%;
+    display: block;
+    margin-bottom: 0.6em;
+  }
+  aside{
+    width: 100%;
+    padding: 2em;
+  }
+  aside > h3{
+    font-size: 1.4em;
+    font-variant: small-caps;
+  }
+  aside > p{
+    font-weight: 600;
+  }
 }
