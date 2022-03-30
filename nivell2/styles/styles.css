@@ -47,7 +47,15 @@ TO DEFAULT */
     align-items: center;
     flex: 0 0 100px;
     margin-left: 2em;
+    position: relative;
+    animation: logoMotion 2s ease-out 4s;
   }
+
+  @keyframes logoMotion {
+    0% { margin-top: 4em; }
+    100% { margin-top: 0em; }
+  }
+
   header{
     display: flex;
   }
@@ -99,7 +107,14 @@ TO DEFAULT */
     font-size: 2em;
     padding-top: 1em;
     font-family: 'Sorts Mill Goudy', serif;
+    animation: mottoMotion 4s ease-out;
   }
+
+  @keyframes mottoMotion {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
   main{
     display:flex;
     margin: 0.6em 3em 0;
@@ -196,6 +211,7 @@ TO DEFAULT */
     text-align: center;
     font-family: 'Roboto', sans-serif;
   }
+
 /* } */
 
 /* *****************************************************************************
@@ -376,10 +392,10 @@ TO DEFAULT */
 
 /* *****************************************************************************
   ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
+  ##Screen = B/w to 479px
 */
 
-@media (max-width: 480px) and (min-width: 320px) {
+@media (max-width: 480px) {
   
   .content{
     max-width: 100%;
