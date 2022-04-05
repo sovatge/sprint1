@@ -2,96 +2,91 @@
 Layout 
 ======== */
 
-/* 
+/* TO DEFAULT *** @media (min-width: 1025px) 
   ##Device = Laptops, Desktops
   ##Screen = 1025px to higher resolution desktops
 */
 
-@media (min-width: 1025px) {
-
-  * { /*  on an element, padding and border are included in the width and height  */
-    box-sizing: border-box;
-  }
-  body{
-    max-width: 1200px;
-  }
-  .container{
-    background-color: #000000;
-    padding: 15px;
-  }
-  header{
-    background-color: #2b374d;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  .logo,.search{
-    background-color: #ff8250;
-    flex-grow: 0.1;
-    height: 15px;
-  }
-  .banner{
-    background-color: #ff8250;
-    flex-grow: 0.77;
-    height: 15px;
-  }
-  nav{
-    background-color: #fd7a0f;
-    padding: 15px;
-  }
-  .navBar{
-    background-color:#ffcd43;
-    height: 15px;
-  }
-  main{
-    background-color: #000000;
-    margin: 15px 0;
-    display: flex;
-  }
-  .news{
-    background-color: #2c384e;
-    flex-grow: 3;
-    margin: 15px;
-  }
-  .posts{
-    display: flex;
-    justify-content: space-around;
-    margin-right: 15px;
-  }
-  section{
-    background-color: #1773c9;
-    width: 100%;
-    margin-top: 15px;
-    margin-left: 15px;
-    height: 15px;
-  }
-  article{
-    background-color: #89addd;
-    margin: 15px;
-    height: 15px;
-  }
-  aside{
-    background-color: #f84518;
-    flex-grow: 1;
-    margin: 15px 0;
-    margin-right: 15px;
-    align-items: flex-start;
-  }
-  aside > p{
-    background-color: #fbfd87;
-    margin: 15px;
-    height: 15px;
-  }
-  footer{
-    background-color: #000000;
-    padding: 15px;
-  }
-  .copyright{
-    background-color: #ffcd43;
-    height: 15px;
-  }
-
+* { /*  on an element, padding and border are included in the width and height  */
+  box-sizing: border-box;
+}
+body{
+  max-width: 1200px;
+}
+.container{
+  background-color: #000000;
+  padding: 15px;
+}
+header{
+  background-color: #2b374d;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.logo,.search{
+  background-color: #ff8250;
+  flex-grow: 0.1;
+  height: 15px;
+}
+.banner{
+  background-color: #ff8250;
+  flex-grow: 0.77;
+  height: 15px;
+}
+nav{
+  background-color: #fd7a0f;
+  padding: 15px;
+}
+.navBar{
+  background-color:#ffcd43;
+  height: 15px;
+}
+main{
+  background-color: #000000;
+  margin: 15px 0;
+  display: flex;
+}
+.news{
+  background-color: #2c384e;
+  flex-grow: 3;
+  margin: 15px;
+}
+.posts{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 15px;
+}
+section{
+  background-color: #1773c9;
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+  height: 15px;
+}
+article{
+  background-color: #89addd;
+  margin: 15px;
+  height: 15px;
+}
+aside{
+  background-color: #f84518;
+  flex-grow: 1;
+  margin: 15px 15px 15px 0;
+  align-items: flex-start;
+}
+aside > p{
+  background-color: #fbfd87;
+  margin: 15px;
+  height: 15px;
+}
+footer{
+  background-color: #000000;
+  padding: 15px;
+}
+.copyright{
+  background-color: #ffcd43;
+  height: 15px;
 }
 
 /* 
@@ -101,83 +96,31 @@ Layout
 
 @media (min-width: 481px) and (max-width: 1024px) {
 
-  * { /*  on an element, padding and border are included in the width and height  */
-    box-sizing: border-box;
-  }
-  .container{
-    background-color: #000000;
-    padding: 15px;
-  }
-  header{
-    background-color: #2b374d;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
   .logo,.search{
-    background-color: #ff8250;
     flex-grow: 0.2;
-    height: 15px;
   }
   .banner{
-    background-color: #ff8250;
     flex-grow: 0.55;
-    height: 15px;
-  }
-  nav{
-    background-color: #fd7a0f;
-    padding: 15px;
-  }
-  .navBar{
-    background-color:#ffcd43;
-    height: 15px;
   }
   main{
     background-color: #babd00;
-    margin: 15px 0;
-    padding: 15px 0;
+    padding: 15px 0 1px;
+    display: block;
   }
   .news{
-    background-color: #2c384e;
     margin: 0 15px 15px;
     padding-bottom: 15px;
   }
-  .posts{
-    display: flex;
-    justify-content: space-around;
-    margin-right: 15px;
-  }
   section{
-    background-color: #1773c9;
-    width: 100%;
     margin: 15px 0 0 15px;
-    height: 15px;
   }
   article{
-    background-color: #89addd;
     margin: 15px 15px 0;
-    height: 15px;
   }
   aside{
-    background-color: #f84518;
-    margin: 0 15px;
+    margin: 0 15px 15px 15px;
     padding: 1px 0;
   }
-  aside > p{
-    background-color: #fbfd87;
-    margin: 15px;
-    height: 15px;
-  }
-  footer{
-    background-color: #000000;
-    padding: 15px;
-  }
-  .copyright{
-    background-color: #ffcd43;
-    height: 15px;
-  }
-
 }
 
 /* 
@@ -187,67 +130,42 @@ Layout
 
 @media (max-width: 480px) {
   
-  * { /*  on an element, padding and border are included in the width and height  */
-    box-sizing: border-box;
-  }
-  .container{
-    background-color: #000000;
-    padding: 15px;
-  }
   header{
-    background-color: #2b374d;
-    padding: 15px 15px 5px;
-    margin-bottom: 10px;
-  }
-  .logo,.search,.banner{
-    background-color: #ff8250;
-    height: 15px;
+    display: block;
+    padding: 15px 15px 1px;
     margin-bottom: 15px;
   }
-  nav{
-    background-color: #fd7a0f;
-    padding: 15px;
-  }
-  .navBar{
-    background-color:#ffcd43;
-    height: 15px;
+  .logo,.search,.banner{
+    margin-bottom: 15px;
   }
   main{
     background-color: #babd00;
-    margin: 15px 0;
     padding: 15px;
+    display: block;
   }
   .news{
-    background-color: #2c384e;
     padding: 15px;
-    margin-bottom: 15px;
+    margin: 0 0 15px;
+  }
+  .posts{
+    display: block;
+    margin-right: 0;
   }
   section{
     background-color: #00a1a7;
-    margin-bottom: 15px;
-    height: 15px;
+    margin: 0 0 15px 0;
   }
   article{
     background-color: #8efbff;
     margin: 15px 0 0;
-    height: 15px;
   }
   aside{
     background-color: #fd7a0f;
     padding: 15px 15px 1px;
+    margin: 0;
   }
   aside > p{
     background-color: #fcb982;
-    height: 15px;
     margin: 0 0 15px;
   }
-  footer{
-    background-color: #000000;
-    padding: 15px;
-  }
-  .copyright{
-    background-color: #ffcd43;
-    height: 15px;
-  }
-  
 }
